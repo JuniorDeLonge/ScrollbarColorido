@@ -1,0 +1,54 @@
+/* pre-set body h1 p */
+body {
+    background-color: #40ff79;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    justify-items: center;
+    color: rgb(0, 0, 0);
+    margin: 5%;
+}
+
+p {
+    font-size: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    justify-items: center;
+    margin: 5%;
+    color: rgb(0, 0, 0);
+}
+/* pre-set body h1 p */
+
+/* Inicio do Scrollbar Colorido - @juniordelonge */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00db1d #ff7d7d;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+/* BG */
+*::-webkit-scrollbar-track {
+    background: #4c086b;
+}
+/* Thumb */
+*::-webkit-scrollbar-thumb {
+    background-color: #db0000;
+    border-radius: 22px;
+    border: 4px solid #e4f317;
+}
+
+/* Fim do Scrollbar Colorido - @juniordelonge */
