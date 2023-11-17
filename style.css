@@ -1,54 +1,158 @@
-/* pre-set body h1 p */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+    --color-verde: #40ff79;
+    --color-preto: #000000;
+    --color-branco: #ffffff;
+    --color-cinza: #1e1d1d;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #40ff79;
-    width: 100%;
-    height: auto;
-    gap: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    background: linear-gradient(180deg, #1cff60, #4dfd82ed);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    gap: 20px;
+}
+
+.container,
+.split {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+}
+
+h1,
+h2,
+p {
+    color: var(--color-preto);
+    padding: 1rem;
     margin: 0;
-    padding: 0;
 }
 
 h1 {
-    font-size: 20em;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: stretch;
-    justify-items: center;
-    color: rgb(0, 0, 0);
-    margin: 5%;
+    font-weight: 900;
+    font-size: clamp(6rem, 8vw, 8rem);
+    line-height: 1;
 }
 
-p {
-    font-size: 5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: stretch;
-    justify-items: center;
-    margin: 5%;
-    color: rgb(0, 0, 0);
+h2 {
+    font-size: 2rem;
 }
-/* pre-set body h1 p */
 
-/* Inicio do Scrollbar Colorido - @juniordelonge */
+.code-container {
+    background-color: var(--color-cinza);
+    border: 1px solid var(--color-cinza);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--color-verde);
+    color: var(--color-cinza);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+button i {
+    margin-right: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    padding: 1rem 0;
+}
+
+@media (max-width: 40em) {
+    body {
+        padding: 1rem;
+    }
+
+    .split,
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: clamp(4rem, 6vw, 6rem);
+    }
+
+    .code-container {
+        margin: 10px 0;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    p {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}
+
+/* Início do Scrollbar Colorido - @juniordelonge */
+
 /* Works on Firefox */
+
 * {
     scrollbar-width: thin;
-    scrollbar-color: #00db1d #ff7d7d;
+    scrollbar-color: var(--color-verde) var(--color-cinza);
 }
 
 /* Works on Chrome, Edge, and Safari */
+
 *::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
+    scrollbar-width: thin;
 }
+
 /* BG */
+
 *::-webkit-scrollbar-track {
-    background: #4c086b;
+    background: var(--color-verde);
 }
+
 /* Thumb */
+
 *::-webkit-scrollbar-thumb {
-    background-color: #db0000;
-    border-radius: 22px;
-    border: 4px solid #e4f317;
+    background-color: var(--color-cinza);
+    border-radius: 10px;
+    border: 10px solid var(--color-cinza);
 }
 
 /* Fim do Scrollbar Colorido - @juniordelonge */

@@ -1,3 +1,5 @@
-# Scrollbar Colorido - @juniordelonge
+# Scrollbar Colorido por Junior DeLonge
 
-### A barra de rolagem (Scrollbar) será colorida e você pode personalizar atraves do codigo de CSS
+### Siga as marcações que estão presente dentro do código e faça as alterações de cores, tamanho e largura.
+
+> CODE + demo: [Scrollbar Colorido](https://juniordelonge.github.io/ScrollbarColorido/)
