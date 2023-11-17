@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.6;
-    background: linear-gradient(180deg, #1cff60, #4dfd82ed);
+    background: linear-gradient(180deg, #40ff79, #73fd9d);
     max-width: 800px;
     margin: 0 auto;
     padding: 3rem;
@@ -156,3 +156,22 @@ footer {
 }
 
 /* Fim do Scrollbar Colorido - @juniordelonge */
+
+
+/* Adicione o seguinte ao seu arquivo CSS */
+
+/* Para Chrome e Edge */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* Adiciona cor de fundo à barra de navegação do Chrome/Edge */
+    header {
+        background-color: var(--color-verde); /* Substitua pela cor desejada */
+    }
+}
+
+/* Para Firefox */
+@-moz-document url-prefix() {
+    /* Adiciona cor de fundo à barra de navegação do Firefox */
+    header {
+        background-color: var(--color-verde); /* Substitua pela cor desejada */
+    }
+}
