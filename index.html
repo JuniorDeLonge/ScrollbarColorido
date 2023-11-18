@@ -30,46 +30,51 @@
     </section>
 
     <div class="code-container">
-        <button onclick="copiarTexto()"><i class="fas fa-copy"></i> Copiar Código</button>
-        <textarea id="codigo" rows="10" placeholder="Insira o código aqui...">
-/* Início do Scrollbar Colorido - @juniordelonge */
+        <div class="header-box">
+            <span class="username"> /dev</span>
+            <button class="copybtn" id="myButton" onclick="myFunction()"><i class="fa fa-copy"></i> copiar</button>
+        </div>
+        <div class="codebox" id="myCode">
+            /* Início do Scrollbar Colorido - @juniordelonge */
 
-:root {
-    --color-verde: #00FF00; /* Substitua pelo sua cor desejado */
-    --color-cinza: #808080; /* Substitua pelo sua cor desejado */
-}
-
-/* Works on Firefox */
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-verde) var(--color-cinza);
-}
-
-/* Works on Chrome, Edge, and Safari */
-
-*::-webkit-scrollbar {
-    width: 10px;
-    scrollbar-width: thin; /* Adicionando para compatibilidade com navegadores WebKit */
-}
-
-/* Background */
-
-*::-webkit-scrollbar-track {
-    background: var(--color-verde);
-}
-
-/* Thumb */
-
-*::-webkit-scrollbar-thumb {
-    background-color: var(--color-cinza);
-    border-radius: 10px;
-    border: 10px solid var(--color-cinza);
-}
-
-/* Fim do Scrollbar Colorido - @juniordelonge */
-</textarea>
+            :root {
+                --color-verde: #00FF00; /* Substitua pelo sua cor desejado */
+                --color-cinza: #808080; /* Substitua pelo sua cor desejado */
+            }
+            
+            /* Works on Firefox */
+            
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: var(--color-verde) var(--color-cinza);
+            }
+            
+            /* Works on Chrome, Edge, and Safari */
+            
+            *::-webkit-scrollbar {
+                width: 10px;
+                scrollbar-width: thin; /* Adicionando para compatibilidade com navegadores WebKit */
+            }
+            
+            /* Background */
+            
+            *::-webkit-scrollbar-track {
+                background: var(--color-verde);
+            }
+            
+            /* Thumb */
+            
+            *::-webkit-scrollbar-thumb {
+                background-color: var(--color-cinza);
+                border-radius: 10px;
+                border: 10px solid var(--color-cinza);
+            }
+            
+            /* Fim do Scrollbar Colorido - @juniordelonge */
+        </div>
     </div>
+
+    
 
     <footer>
         <p>dev @juniordelonge</p>

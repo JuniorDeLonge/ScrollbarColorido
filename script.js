@@ -1,11 +1,15 @@
-function copiarTexto() {
-    /* Seleciona o conteúdo da caixa de texto */
-    var caixaDeTexto = document.getElementById("codigo");
-    caixaDeTexto.select();
+function myFunction() {
+    const copyText = document.getElementById("myCode");
+    navigator.clipboard.writeText(copyText.innerText);
 
-    /* Copia o texto para a área de transferência */
-    document.execCommand('copy');
+    const copyButton = document.getElementById("myButton");
+    updateButton(copyButton, "<i class='fa fa-check'></i> copiado!");
 
-    /* Deseleciona o texto após a cópia */
-    window.getSelection().removeAllRanges();
+    setTimeout(() => {
+        updateButton(copyButton, "<i class='fa fa-copy'></i> copiar");
+    }, 2000);
+}
+
+function updateButton(button, message) {
+    button.innerHTML = message;
 }
