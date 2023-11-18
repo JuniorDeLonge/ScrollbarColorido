@@ -11,22 +11,20 @@
     <meta name="theme-color" content="#40ff79">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>ScrollBar Colorido - @juniordelonge</title>
+    <title>Scrollbar Colorido - @juniordelonge</title>
 </head>
 
 <body>
     <header class="header">
-        <h1>Scrollbar<br>Colorido</h1>
+        <h1>Scrollbar Colorido</h1>
     </header>
     <section class="container split">
-        <h2>Saiba como mudar<br>a cor do ScrollBar</h2>
-        <p>A barra de rolagem ficará colorida e você poderá regular as dimensões, como largura, forma circular ou
-            quadrada do scrollbar, copie o código que está logo abaixo e cole em seu arquivo CSS. Siga as marcações que
-            estão presente dentro do código e faça as alterações de cores, tamanho e largura.</p>
+        <h2>Saiba como mudar a cor do ScrollBar</h2>
+        <p>A barra de rolagem ficará colorida e você poderá ajustar dimensões como largura, formato circular ou quadrado do scrollbar. Copie o código abaixo e cole em seu arquivo CSS. Siga as marcações dentro do código e faça as alterações de cores, tamanho e largura.</p>
     </section>
     <section class="container split">
         <h2>Ops!! Não se esqueça...</h2>
-        <p>A barra de rolagem colorida apenas funciona em navegadores para desktop.</p>
+        <p>A barra de rolagem colorida só funciona em navegadores para desktop.</p>
     </section>
     <div class="code-container">
         <div class="header-box">
@@ -37,36 +35,36 @@
             /* Início do Scrollbar Colorido - @juniordelonge */
 
             :root {
-            --color-verde: #00FF00; /* Substitua pelo sua cor desejado */
-            --color-cinza: #808080; /* Substitua pelo sua cor desejado */
+                --color-verde: #00FF00; /* Substitua pela cor desejada */
+                --color-cinza: #808080; /* Substitua pela cor desejada */
             }
 
-            /* Works on Firefox */
+            /* Funciona no Firefox */
 
             * {
-            scrollbar-width: thin;
-            scrollbar-color: var(--color-verde) var(--color-cinza);
+                scrollbar-width: thin;
+                scrollbar-color: var(--color-verde) var(--color-cinza);
             }
 
-            /* Works on Chrome, Edge, and Safari */
+            /* Funciona no Chrome, Edge e Safari */
 
             *::-webkit-scrollbar {
-            width: 10px;
-            scrollbar-width: thin; /* Adicionando para compatibilidade com navegadores WebKit */
+                width: 10px;
+                scrollbar-width: thin; /* Adicionando para compatibilidade com navegadores WebKit */
             }
 
             /* Background */
 
             *::-webkit-scrollbar-track {
-            background: var(--color-verde);
+                background: var(--color-verde);
             }
 
             /* Thumb */
 
             *::-webkit-scrollbar-thumb {
-            background-color: var(--color-cinza);
-            border-radius: 10px;
-            border: 10px solid var(--color-cinza);
+                background-color: var(--color-cinza);
+                border-radius: 10px;
+                border: 10px solid var(--color-cinza);
             }
 
             /* Fim do Scrollbar Colorido - @juniordelonge */

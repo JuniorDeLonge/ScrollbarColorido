@@ -183,8 +183,7 @@ footer {
 
 /* Fim do Scrollbar Colorido - @juniordelonge */
 
-/* Adicione o seguinte ao seu arquivo CSS */
-
+/* Estilos adicionais para navegadores específicos */
 /* Para Chrome e Edge */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     /* Adiciona cor de fundo à barra de navegação do Chrome/Edge */
